@@ -1,0 +1,3045 @@
+[
+  {
+    "id": "SCAN-2026-921",
+    "targetIds": [
+      "target_123",
+      "target_1786872281099_mdza"
+    ],
+    "targetsSnapshot": [
+      {
+        "id": "target_123",
+        "name": "OWASP Juice Shop Sandbox",
+        "url": "https://juice-shop.herokuapp.com",
+        "type": "Web App",
+        "status": "Authorized",
+        "roeId": "AUTH-2026-OWASP-01",
+        "scope": "Single Domain & REST API",
+        "addedDate": "2026-08-10",
+        "lastScanDate": "2026-08-15",
+        "notes": "Authorized sandbox instance for OWASP vulnerability verification labs.",
+        "authConfirmed": true
+      },
+      {
+        "id": "target_1786872281099_mdza",
+        "name": "google",
+        "url": "https://skit.crezam.com/candidate/dashboard",
+        "type": "Web App",
+        "status": "Authorized",
+        "roeId": "AUTH-2026-6361",
+        "scope": "Single Host / Domain",
+        "addedDate": "2026-08-16",
+        "notes": "",
+        "authConfirmed": true
+      }
+    ],
+    "scanProfile": "standard",
+    "safeMode": true,
+    "rateLimit": 10,
+    "timeout": 30,
+    "status": "completed",
+    "currentStage": "report_generation",
+    "progressPercentage": 100,
+    "checksCompleted": 18,
+    "totalChecks": 30,
+    "findingsCount": {
+      "critical": 0,
+      "high": 0,
+      "medium": 0,
+      "low": 2,
+      "info": 0,
+      "total": 2
+    },
+    "securityScore": 94,
+    "startedAt": "2026-08-16T09:25:01.120Z",
+    "durationSeconds": 26,
+    "logs": [
+      {
+        "timestamp": "2026-08-16T09:25:01.120Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Scan record SCAN-2026-921 created. Targets frozen: OWASP Juice Shop Sandbox, google"
+      },
+      {
+        "timestamp": "2026-08-16T09:25:01.127Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Initiating backend scope validation for Scan ID SCAN-2026-921..."
+      },
+      {
+        "timestamp": "2026-08-16T09:25:01.734Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Verifying target [OWASP Juice Shop Sandbox] (https://juice-shop.herokuapp.com) against RoE [AUTH-2026-OWASP-01]..."
+      },
+      {
+        "timestamp": "2026-08-16T09:25:01.738Z",
+        "stage": "scope_validation",
+        "level": "success",
+        "message": "Target [OWASP Juice Shop Sandbox] scope matched defined boundary (Single Domain & REST API)."
+      },
+      {
+        "timestamp": "2026-08-16T09:25:01.741Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Verifying target [google] (https://skit.crezam.com/candidate/dashboard) against RoE [AUTH-2026-6361]..."
+      },
+      {
+        "timestamp": "2026-08-16T09:25:01.744Z",
+        "stage": "scope_validation",
+        "level": "success",
+        "message": "Target [google] scope matched defined boundary (Single Host / Domain)."
+      },
+      {
+        "timestamp": "2026-08-16T09:25:01.747Z",
+        "stage": "authorization_check",
+        "level": "info",
+        "message": "Verifying legal authorization signature & active RoE documentation status..."
+      },
+      {
+        "timestamp": "2026-08-16T09:25:02.368Z",
+        "stage": "authorization_check",
+        "level": "success",
+        "message": "Authorization confirmed for Target [OWASP Juice Shop Sandbox]. RoE valid."
+      },
+      {
+        "timestamp": "2026-08-16T09:25:02.371Z",
+        "stage": "authorization_check",
+        "level": "success",
+        "message": "Authorization confirmed for Target [google]. RoE valid."
+      },
+      {
+        "timestamp": "2026-08-16T09:25:02.374Z",
+        "stage": "reconnaissance",
+        "level": "info",
+        "message": "Starting non-destructive technology stack fingerprinting and service probing..."
+      },
+      {
+        "timestamp": "2026-08-16T09:25:03.189Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Executing security checks for profile [STANDARD]..."
+      },
+      {
+        "timestamp": "2026-08-16T09:25:03.189Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Auditing HTTP Security Headers for OWASP Juice Shop Sandbox..."
+      },
+      {
+        "timestamp": "2026-08-16T09:25:09.204Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Auditing CORS policy & session cookie attributes for OWASP Juice Shop Sandbox..."
+      },
+      {
+        "timestamp": "2026-08-16T09:25:15.208Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Auditing HTTP Security Headers for google..."
+      },
+      {
+        "timestamp": "2026-08-16T09:25:21.221Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Auditing CORS policy & session cookie attributes for google..."
+      },
+      {
+        "timestamp": "2026-08-16T09:25:26.370Z",
+        "stage": "vulnerability_analysis",
+        "level": "info",
+        "message": "Consolidating 2 vulnerability findings..."
+      },
+      {
+        "timestamp": "2026-08-16T09:25:26.988Z",
+        "stage": "risk_classification",
+        "level": "info",
+        "message": "Calculating CVSS v3.1 aggregate metrics and overall Security Score..."
+      },
+      {
+        "timestamp": "2026-08-16T09:25:27.590Z",
+        "stage": "risk_classification",
+        "level": "success",
+        "message": "Security Score computed: 94/100. Critical: 0, High: 0, Medium: 0, Low: 2."
+      },
+      {
+        "timestamp": "2026-08-16T09:25:27.592Z",
+        "stage": "report_generation",
+        "level": "success",
+        "message": "Scan SCAN-SCAN-2026-921 completed successfully in 12s."
+      }
+    ],
+    "completedAt": "2026-08-16T09:25:27.593Z"
+  },
+  {
+    "id": "SCAN-2026-480",
+    "targetIds": [
+      "target_123",
+      "target_1786872281099_mdza"
+    ],
+    "targetsSnapshot": [
+      {
+        "id": "target_123",
+        "name": "OWASP Juice Shop Sandbox",
+        "url": "https://juice-shop.herokuapp.com",
+        "type": "Web App",
+        "status": "Authorized",
+        "roeId": "AUTH-2026-OWASP-01",
+        "scope": "Single Domain & REST API",
+        "addedDate": "2026-08-10",
+        "lastScanDate": "2026-08-16",
+        "notes": "Authorized sandbox instance for OWASP vulnerability verification labs.",
+        "authConfirmed": true
+      },
+      {
+        "id": "target_1786872281099_mdza",
+        "name": "google",
+        "url": "https://skit.crezam.com/candidate/dashboard",
+        "type": "Web App",
+        "status": "Authorized",
+        "roeId": "AUTH-2026-6361",
+        "scope": "Single Host / Domain",
+        "addedDate": "2026-08-16",
+        "notes": "",
+        "authConfirmed": true,
+        "lastScanDate": "2026-08-16"
+      }
+    ],
+    "scanProfile": "comprehensive",
+    "safeMode": true,
+    "rateLimit": 10,
+    "timeout": 30,
+    "status": "completed",
+    "currentStage": "report_generation",
+    "progressPercentage": 100,
+    "checksCompleted": 34,
+    "totalChecks": 30,
+    "findingsCount": {
+      "critical": 0,
+      "high": 2,
+      "medium": 2,
+      "low": 3,
+      "info": 3,
+      "total": 10
+    },
+    "securityScore": 45,
+    "startedAt": "2026-08-16T09:26:06.375Z",
+    "durationSeconds": 46,
+    "logs": [
+      {
+        "timestamp": "2026-08-16T09:26:06.375Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Scan record SCAN-2026-480 created. Targets frozen: OWASP Juice Shop Sandbox, google"
+      },
+      {
+        "timestamp": "2026-08-16T09:26:06.379Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Initiating backend scope validation for Scan ID SCAN-2026-480..."
+      },
+      {
+        "timestamp": "2026-08-16T09:26:06.989Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Verifying target [OWASP Juice Shop Sandbox] (https://juice-shop.herokuapp.com) against RoE [AUTH-2026-OWASP-01]..."
+      },
+      {
+        "timestamp": "2026-08-16T09:26:06.992Z",
+        "stage": "scope_validation",
+        "level": "success",
+        "message": "Target [OWASP Juice Shop Sandbox] scope matched defined boundary (Single Domain & REST API)."
+      },
+      {
+        "timestamp": "2026-08-16T09:26:06.995Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Verifying target [google] (https://skit.crezam.com/candidate/dashboard) against RoE [AUTH-2026-6361]..."
+      },
+      {
+        "timestamp": "2026-08-16T09:26:06.998Z",
+        "stage": "scope_validation",
+        "level": "success",
+        "message": "Target [google] scope matched defined boundary (Single Host / Domain)."
+      },
+      {
+        "timestamp": "2026-08-16T09:26:07.005Z",
+        "stage": "authorization_check",
+        "level": "info",
+        "message": "Verifying legal authorization signature & active RoE documentation status..."
+      },
+      {
+        "timestamp": "2026-08-16T09:26:07.610Z",
+        "stage": "authorization_check",
+        "level": "success",
+        "message": "Authorization confirmed for Target [OWASP Juice Shop Sandbox]. RoE valid."
+      },
+      {
+        "timestamp": "2026-08-16T09:26:07.611Z",
+        "stage": "authorization_check",
+        "level": "success",
+        "message": "Authorization confirmed for Target [google]. RoE valid."
+      },
+      {
+        "timestamp": "2026-08-16T09:26:07.613Z",
+        "stage": "reconnaissance",
+        "level": "info",
+        "message": "Starting non-destructive technology stack fingerprinting and service probing..."
+      },
+      {
+        "timestamp": "2026-08-16T09:26:08.422Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Executing security checks for profile [COMPREHENSIVE]..."
+      },
+      {
+        "timestamp": "2026-08-16T09:26:08.423Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Auditing HTTP Security Headers for OWASP Juice Shop Sandbox..."
+      },
+      {
+        "timestamp": "2026-08-16T09:26:14.442Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Auditing CORS policy & session cookie attributes for OWASP Juice Shop Sandbox..."
+      },
+      {
+        "timestamp": "2026-08-16T09:26:19.561Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Executing Port & Service Assessment profile on OWASP Juice Shop Sandbox..."
+      },
+      {
+        "timestamp": "2026-08-16T09:26:29.610Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Running opt-in sensitive path discovery checks on OWASP Juice Shop Sandbox..."
+      },
+      {
+        "timestamp": "2026-08-16T09:26:33.755Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Auditing HTTP Security Headers for google..."
+      },
+      {
+        "timestamp": "2026-08-16T09:26:34.199Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Auditing CORS policy & session cookie attributes for google..."
+      },
+      {
+        "timestamp": "2026-08-16T09:26:34.577Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Executing Port & Service Assessment profile on google..."
+      },
+      {
+        "timestamp": "2026-08-16T09:26:41.471Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Running opt-in sensitive path discovery checks on google..."
+      },
+      {
+        "timestamp": "2026-08-16T09:26:51.430Z",
+        "stage": "vulnerability_analysis",
+        "level": "info",
+        "message": "Consolidating 10 vulnerability findings..."
+      },
+      {
+        "timestamp": "2026-08-16T09:26:52.048Z",
+        "stage": "risk_classification",
+        "level": "info",
+        "message": "Calculating CVSS v3.1 aggregate metrics and overall Security Score..."
+      },
+      {
+        "timestamp": "2026-08-16T09:26:52.663Z",
+        "stage": "risk_classification",
+        "level": "success",
+        "message": "Security Score computed: 45/100. Critical: 0, High: 2, Medium: 2, Low: 3."
+      },
+      {
+        "timestamp": "2026-08-16T09:26:52.675Z",
+        "stage": "report_generation",
+        "level": "success",
+        "message": "Scan SCAN-SCAN-2026-480 completed successfully in 12s."
+      }
+    ],
+    "completedAt": "2026-08-16T09:26:52.679Z"
+  },
+  {
+    "id": "SCAN-2026-583",
+    "targetIds": [
+      "target_123",
+      "target_456",
+      "target_1786872281099_mdza"
+    ],
+    "targetsSnapshot": [
+      {
+        "id": "target_123",
+        "name": "OWASP Juice Shop Sandbox",
+        "url": "https://juice-shop.herokuapp.com",
+        "type": "Web App",
+        "status": "Authorized",
+        "roeId": "AUTH-2026-OWASP-01",
+        "scope": "Single Domain & REST API",
+        "addedDate": "2026-08-10",
+        "lastScanDate": "2026-08-16",
+        "notes": "Authorized sandbox instance for OWASP vulnerability verification labs.",
+        "authConfirmed": true
+      },
+      {
+        "id": "target_456",
+        "name": "Local Vulnerable Lab App",
+        "url": "http://localhost:3000",
+        "type": "Web App",
+        "status": "Authorized",
+        "roeId": "AUTH-2026-LAB-02",
+        "scope": "Localhost Web Application",
+        "addedDate": "2026-08-12",
+        "notes": "Intentionally vulnerable Node.js/Express lab target running in container.",
+        "authConfirmed": true
+      },
+      {
+        "id": "target_1786872281099_mdza",
+        "name": "google",
+        "url": "https://skit.crezam.com/candidate/dashboard",
+        "type": "Web App",
+        "status": "Authorized",
+        "roeId": "AUTH-2026-6361",
+        "scope": "Single Host / Domain",
+        "addedDate": "2026-08-16",
+        "notes": "",
+        "authConfirmed": true,
+        "lastScanDate": "2026-08-16"
+      }
+    ],
+    "scanProfile": "port_service",
+    "safeMode": true,
+    "rateLimit": 10,
+    "timeout": 30,
+    "status": "completed",
+    "currentStage": "report_generation",
+    "progressPercentage": 100,
+    "checksCompleted": 42,
+    "totalChecks": 45,
+    "findingsCount": {
+      "critical": 0,
+      "high": 2,
+      "medium": 3,
+      "low": 5,
+      "info": 2,
+      "total": 12
+    },
+    "securityScore": 31,
+    "startedAt": "2026-08-16T09:27:36.769Z",
+    "durationSeconds": 20,
+    "logs": [
+      {
+        "timestamp": "2026-08-16T09:27:36.769Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Scan record SCAN-2026-583 created. Targets frozen: OWASP Juice Shop Sandbox, Local Vulnerable Lab App, google"
+      },
+      {
+        "timestamp": "2026-08-16T09:27:36.773Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Initiating backend scope validation for Scan ID SCAN-2026-583..."
+      },
+      {
+        "timestamp": "2026-08-16T09:27:37.388Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Verifying target [OWASP Juice Shop Sandbox] (https://juice-shop.herokuapp.com) against RoE [AUTH-2026-OWASP-01]..."
+      },
+      {
+        "timestamp": "2026-08-16T09:27:37.393Z",
+        "stage": "scope_validation",
+        "level": "success",
+        "message": "Target [OWASP Juice Shop Sandbox] scope matched defined boundary (Single Domain & REST API)."
+      },
+      {
+        "timestamp": "2026-08-16T09:27:37.395Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Verifying target [Local Vulnerable Lab App] (http://localhost:3000) against RoE [AUTH-2026-LAB-02]..."
+      },
+      {
+        "timestamp": "2026-08-16T09:27:37.400Z",
+        "stage": "scope_validation",
+        "level": "success",
+        "message": "Target [Local Vulnerable Lab App] scope matched defined boundary (Localhost Web Application)."
+      },
+      {
+        "timestamp": "2026-08-16T09:27:37.403Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Verifying target [google] (https://skit.crezam.com/candidate/dashboard) against RoE [AUTH-2026-6361]..."
+      },
+      {
+        "timestamp": "2026-08-16T09:27:37.406Z",
+        "stage": "scope_validation",
+        "level": "success",
+        "message": "Target [google] scope matched defined boundary (Single Host / Domain)."
+      },
+      {
+        "timestamp": "2026-08-16T09:27:37.413Z",
+        "stage": "authorization_check",
+        "level": "info",
+        "message": "Verifying legal authorization signature & active RoE documentation status..."
+      },
+      {
+        "timestamp": "2026-08-16T09:27:38.015Z",
+        "stage": "authorization_check",
+        "level": "success",
+        "message": "Authorization confirmed for Target [OWASP Juice Shop Sandbox]. RoE valid."
+      },
+      {
+        "timestamp": "2026-08-16T09:27:38.019Z",
+        "stage": "authorization_check",
+        "level": "success",
+        "message": "Authorization confirmed for Target [Local Vulnerable Lab App]. RoE valid."
+      },
+      {
+        "timestamp": "2026-08-16T09:27:38.022Z",
+        "stage": "authorization_check",
+        "level": "success",
+        "message": "Authorization confirmed for Target [google]. RoE valid."
+      },
+      {
+        "timestamp": "2026-08-16T09:27:38.026Z",
+        "stage": "reconnaissance",
+        "level": "info",
+        "message": "Starting non-destructive technology stack fingerprinting and service probing..."
+      },
+      {
+        "timestamp": "2026-08-16T09:27:38.843Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Executing security checks for profile [PORT_SERVICE]..."
+      },
+      {
+        "timestamp": "2026-08-16T09:27:38.848Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Auditing HTTP Security Headers for OWASP Juice Shop Sandbox..."
+      },
+      {
+        "timestamp": "2026-08-16T09:27:39.626Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Auditing CORS policy & session cookie attributes for OWASP Juice Shop Sandbox..."
+      },
+      {
+        "timestamp": "2026-08-16T09:27:40.168Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Executing Port & Service Assessment profile on OWASP Juice Shop Sandbox..."
+      },
+      {
+        "timestamp": "2026-08-16T09:27:48.759Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Auditing HTTP Security Headers for Local Vulnerable Lab App..."
+      },
+      {
+        "timestamp": "2026-08-16T09:27:48.770Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Auditing CORS policy & session cookie attributes for Local Vulnerable Lab App..."
+      },
+      {
+        "timestamp": "2026-08-16T09:27:48.775Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Executing Port & Service Assessment profile on Local Vulnerable Lab App..."
+      },
+      {
+        "timestamp": "2026-08-16T09:27:48.807Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Auditing HTTP Security Headers for google..."
+      },
+      {
+        "timestamp": "2026-08-16T09:27:49.129Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Auditing CORS policy & session cookie attributes for google..."
+      },
+      {
+        "timestamp": "2026-08-16T09:27:49.431Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Executing Port & Service Assessment profile on google..."
+      },
+      {
+        "timestamp": "2026-08-16T09:27:55.797Z",
+        "stage": "vulnerability_analysis",
+        "level": "info",
+        "message": "Consolidating 12 vulnerability findings..."
+      },
+      {
+        "timestamp": "2026-08-16T09:27:56.408Z",
+        "stage": "risk_classification",
+        "level": "info",
+        "message": "Calculating CVSS v3.1 aggregate metrics and overall Security Score..."
+      },
+      {
+        "timestamp": "2026-08-16T09:27:57.026Z",
+        "stage": "risk_classification",
+        "level": "success",
+        "message": "Security Score computed: 31/100. Critical: 0, High: 2, Medium: 3, Low: 5."
+      },
+      {
+        "timestamp": "2026-08-16T09:27:57.052Z",
+        "stage": "report_generation",
+        "level": "success",
+        "message": "Scan SCAN-SCAN-2026-583 completed successfully in 12s."
+      }
+    ],
+    "completedAt": "2026-08-16T09:27:57.054Z"
+  },
+  {
+    "id": "SCAN-2026-665",
+    "targetIds": [
+      "target_123",
+      "target_456",
+      "target_1786872281099_mdza"
+    ],
+    "targetsSnapshot": [
+      {
+        "id": "target_123",
+        "name": "OWASP Juice Shop Sandbox",
+        "url": "https://juice-shop.herokuapp.com",
+        "type": "Web App",
+        "status": "Authorized",
+        "roeId": "AUTH-2026-OWASP-01",
+        "scope": "Single Domain & REST API",
+        "addedDate": "2026-08-10",
+        "lastScanDate": "2026-08-16",
+        "notes": "Authorized sandbox instance for OWASP vulnerability verification labs.",
+        "authConfirmed": true
+      },
+      {
+        "id": "target_456",
+        "name": "Local Vulnerable Lab App",
+        "url": "http://localhost:3000",
+        "type": "Web App",
+        "status": "Authorized",
+        "roeId": "AUTH-2026-LAB-02",
+        "scope": "Localhost Web Application",
+        "addedDate": "2026-08-12",
+        "lastScanDate": "2026-08-16",
+        "notes": "Intentionally vulnerable Node.js/Express lab target running in container.",
+        "authConfirmed": true
+      },
+      {
+        "id": "target_1786872281099_mdza",
+        "name": "google",
+        "url": "https://skit.crezam.com/candidate/dashboard",
+        "type": "Web App",
+        "status": "Authorized",
+        "roeId": "AUTH-2026-6361",
+        "scope": "Single Host / Domain",
+        "addedDate": "2026-08-16",
+        "notes": "",
+        "authConfirmed": true,
+        "lastScanDate": "2026-08-16"
+      }
+    ],
+    "scanProfile": "quick",
+    "safeMode": true,
+    "rateLimit": 10,
+    "timeout": 30,
+    "status": "completed",
+    "currentStage": "report_generation",
+    "progressPercentage": 100,
+    "checksCompleted": 27,
+    "totalChecks": 45,
+    "findingsCount": {
+      "critical": 0,
+      "high": 2,
+      "medium": 3,
+      "low": 5,
+      "info": 0,
+      "total": 10
+    },
+    "securityScore": 31,
+    "startedAt": "2026-08-16T09:36:16.239Z",
+    "durationSeconds": 5,
+    "logs": [
+      {
+        "timestamp": "2026-08-16T09:36:16.239Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Scan record SCAN-2026-665 created. Targets frozen: OWASP Juice Shop Sandbox, Local Vulnerable Lab App, google"
+      },
+      {
+        "timestamp": "2026-08-16T09:36:16.244Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Initiating backend scope validation for Scan ID SCAN-2026-665..."
+      },
+      {
+        "timestamp": "2026-08-16T09:36:16.849Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Verifying target [OWASP Juice Shop Sandbox] (https://juice-shop.herokuapp.com) against RoE [AUTH-2026-OWASP-01]..."
+      },
+      {
+        "timestamp": "2026-08-16T09:36:16.854Z",
+        "stage": "scope_validation",
+        "level": "success",
+        "message": "Target [OWASP Juice Shop Sandbox] scope matched defined boundary (Single Domain & REST API)."
+      },
+      {
+        "timestamp": "2026-08-16T09:36:16.857Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Verifying target [Local Vulnerable Lab App] (http://localhost:3000) against RoE [AUTH-2026-LAB-02]..."
+      },
+      {
+        "timestamp": "2026-08-16T09:36:16.861Z",
+        "stage": "scope_validation",
+        "level": "success",
+        "message": "Target [Local Vulnerable Lab App] scope matched defined boundary (Localhost Web Application)."
+      },
+      {
+        "timestamp": "2026-08-16T09:36:16.865Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Verifying target [google] (https://skit.crezam.com/candidate/dashboard) against RoE [AUTH-2026-6361]..."
+      },
+      {
+        "timestamp": "2026-08-16T09:36:16.870Z",
+        "stage": "scope_validation",
+        "level": "success",
+        "message": "Target [google] scope matched defined boundary (Single Host / Domain)."
+      },
+      {
+        "timestamp": "2026-08-16T09:36:16.877Z",
+        "stage": "authorization_check",
+        "level": "info",
+        "message": "Verifying legal authorization signature & active RoE documentation status..."
+      },
+      {
+        "timestamp": "2026-08-16T09:36:17.489Z",
+        "stage": "authorization_check",
+        "level": "success",
+        "message": "Authorization confirmed for Target [OWASP Juice Shop Sandbox]. RoE valid."
+      },
+      {
+        "timestamp": "2026-08-16T09:36:17.494Z",
+        "stage": "authorization_check",
+        "level": "success",
+        "message": "Authorization confirmed for Target [Local Vulnerable Lab App]. RoE valid."
+      },
+      {
+        "timestamp": "2026-08-16T09:36:17.497Z",
+        "stage": "authorization_check",
+        "level": "success",
+        "message": "Authorization confirmed for Target [google]. RoE valid."
+      },
+      {
+        "timestamp": "2026-08-16T09:36:17.501Z",
+        "stage": "reconnaissance",
+        "level": "info",
+        "message": "Starting non-destructive technology stack fingerprinting and service probing..."
+      },
+      {
+        "timestamp": "2026-08-16T09:36:18.308Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Executing security checks for profile [QUICK]..."
+      },
+      {
+        "timestamp": "2026-08-16T09:36:18.310Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Auditing HTTP Security Headers for OWASP Juice Shop Sandbox..."
+      },
+      {
+        "timestamp": "2026-08-16T09:36:19.187Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Auditing CORS policy & session cookie attributes for OWASP Juice Shop Sandbox..."
+      },
+      {
+        "timestamp": "2026-08-16T09:36:19.750Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Auditing HTTP Security Headers for Local Vulnerable Lab App..."
+      },
+      {
+        "timestamp": "2026-08-16T09:36:19.755Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Auditing CORS policy & session cookie attributes for Local Vulnerable Lab App..."
+      },
+      {
+        "timestamp": "2026-08-16T09:36:19.759Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Auditing HTTP Security Headers for google..."
+      },
+      {
+        "timestamp": "2026-08-16T09:36:20.088Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Auditing CORS policy & session cookie attributes for google..."
+      },
+      {
+        "timestamp": "2026-08-16T09:36:20.337Z",
+        "stage": "vulnerability_analysis",
+        "level": "info",
+        "message": "Consolidating 10 vulnerability findings..."
+      },
+      {
+        "timestamp": "2026-08-16T09:36:20.953Z",
+        "stage": "risk_classification",
+        "level": "info",
+        "message": "Calculating CVSS v3.1 aggregate metrics and overall Security Score..."
+      },
+      {
+        "timestamp": "2026-08-16T09:36:21.563Z",
+        "stage": "risk_classification",
+        "level": "success",
+        "message": "Security Score computed: 31/100. Critical: 0, High: 2, Medium: 3, Low: 5."
+      },
+      {
+        "timestamp": "2026-08-16T09:36:21.566Z",
+        "stage": "report_generation",
+        "level": "success",
+        "message": "Scan SCAN-SCAN-2026-665 completed successfully in 12s."
+      }
+    ],
+    "completedAt": "2026-08-16T09:36:21.567Z"
+  },
+  {
+    "id": "ASSESS-2026-613",
+    "targetIds": [
+      "target_123"
+    ],
+    "targetsSnapshot": [
+      {
+        "id": "target_123",
+        "name": "OWASP Juice Shop Sandbox",
+        "url": "https://juice-shop.herokuapp.com",
+        "type": "Web App",
+        "status": "Authorized",
+        "roeId": "AUTH-2026-OWASP-01",
+        "scope": "Single Domain & REST API",
+        "addedDate": "2026-08-10",
+        "lastScanDate": "2026-08-16",
+        "notes": "Authorized sandbox instance for OWASP vulnerability verification labs.",
+        "authConfirmed": true
+      }
+    ],
+    "scanProfile": "standard",
+    "safeMode": false,
+    "rateLimit": 10,
+    "timeout": 30,
+    "status": "completed",
+    "currentStage": "report_generation",
+    "progressPercentage": 100,
+    "checksCompleted": 9,
+    "totalChecks": 15,
+    "findingsCount": {
+      "critical": 0,
+      "high": 1,
+      "medium": 2,
+      "low": 2,
+      "info": 0,
+      "total": 5
+    },
+    "securityScore": 63,
+    "startedAt": "2026-08-16T13:05:28.868Z",
+    "durationSeconds": 13,
+    "logs": [
+      {
+        "timestamp": "2026-08-16T13:05:28.868Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Assessment record ASSESS-2026-613 created. Frozen scope: OWASP Juice Shop Sandbox"
+      },
+      {
+        "timestamp": "2026-08-16T13:05:28.878Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Initiating backend scope & RoE boundary validation for ASSESS-2026-613..."
+      },
+      {
+        "timestamp": "2026-08-16T13:05:29.295Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Verifying target [OWASP Juice Shop Sandbox] (https://juice-shop.herokuapp.com) against RoE [AUTH-2026-OWASP-01]..."
+      },
+      {
+        "timestamp": "2026-08-16T13:05:29.310Z",
+        "stage": "scope_validation",
+        "level": "success",
+        "message": "Target [OWASP Juice Shop Sandbox] scope matched defined boundary (Single Domain & REST API). Environment: undefined"
+      },
+      {
+        "timestamp": "2026-08-16T13:05:29.370Z",
+        "stage": "authorization_check",
+        "level": "info",
+        "message": "Verifying legal authorization signature & active RoE documentation status..."
+      },
+      {
+        "timestamp": "2026-08-16T13:05:29.786Z",
+        "stage": "authorization_check",
+        "level": "success",
+        "message": "Authorization confirmed for Target [OWASP Juice Shop Sandbox]. RoE active."
+      },
+      {
+        "timestamp": "2026-08-16T13:05:29.805Z",
+        "stage": "reconnaissance",
+        "level": "info",
+        "message": "Starting tech stack fingerprinting and endpoint discovery..."
+      },
+      {
+        "timestamp": "2026-08-16T13:05:30.313Z",
+        "stage": "reconnaissance",
+        "level": "success",
+        "message": "Discovered 3 active endpoints across targets."
+      },
+      {
+        "timestamp": "2026-08-16T13:05:30.343Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Executing security checks for profile [STANDARD]..."
+      },
+      {
+        "timestamp": "2026-08-16T13:05:30.361Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Auditing HTTP Security Headers for OWASP Juice Shop Sandbox..."
+      },
+      {
+        "timestamp": "2026-08-16T13:05:36.340Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Auditing CORS policy & session cookie attributes for OWASP Juice Shop Sandbox..."
+      },
+      {
+        "timestamp": "2026-08-16T13:05:41.155Z",
+        "stage": "vulnerability_analysis",
+        "level": "info",
+        "message": "Consolidating 5 vulnerability findings..."
+      },
+      {
+        "timestamp": "2026-08-16T13:05:41.594Z",
+        "stage": "risk_classification",
+        "level": "info",
+        "message": "Calculating CVSS v3.1 aggregate metrics and Security Score..."
+      },
+      {
+        "timestamp": "2026-08-16T13:05:42.017Z",
+        "stage": "risk_classification",
+        "level": "success",
+        "message": "Security Score computed: 63/100. Critical: 0, High: 1, Medium: 2, Low: 2."
+      },
+      {
+        "timestamp": "2026-08-16T13:05:42.034Z",
+        "stage": "report_generation",
+        "level": "success",
+        "message": "Assessment ASSESS-2026-613 completed successfully."
+      }
+    ],
+    "completedAt": "2026-08-16T13:05:42.038Z"
+  },
+  {
+    "id": "ASSESS-2026-367",
+    "targetIds": [
+      "target_1786885861411_rvn1"
+    ],
+    "targetsSnapshot": [
+      {
+        "id": "target_1786885861411_rvn1",
+        "name": "vtu assistant",
+        "url": "https://vtu-assistant-670669967147.asia-southeast1.run.app/",
+        "type": "Web App",
+        "environment": "LAB",
+        "status": "Authorized",
+        "roeId": "AUTH-2026-6124",
+        "scope": "Single Host ",
+        "addedDate": "2026-08-16",
+        "notes": "",
+        "authConfirmed": true
+      }
+    ],
+    "scanProfile": "standard",
+    "safeMode": false,
+    "rateLimit": 10,
+    "timeout": 30,
+    "status": "completed",
+    "currentStage": "report_generation",
+    "progressPercentage": 100,
+    "checksCompleted": 9,
+    "totalChecks": 15,
+    "findingsCount": {
+      "critical": 0,
+      "high": 1,
+      "medium": 4,
+      "low": 2,
+      "info": 0,
+      "total": 7
+    },
+    "securityScore": 47,
+    "startedAt": "2026-08-16T13:13:08.979Z",
+    "durationSeconds": 8,
+    "logs": [
+      {
+        "timestamp": "2026-08-16T13:13:08.979Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Assessment record ASSESS-2026-367 created. Frozen scope: vtu assistant"
+      },
+      {
+        "timestamp": "2026-08-16T13:13:08.990Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Initiating backend scope & RoE boundary validation for ASSESS-2026-367..."
+      },
+      {
+        "timestamp": "2026-08-16T13:13:09.409Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Verifying target [vtu assistant] (https://vtu-assistant-670669967147.asia-southeast1.run.app/) against RoE [AUTH-2026-6124]..."
+      },
+      {
+        "timestamp": "2026-08-16T13:13:09.415Z",
+        "stage": "scope_validation",
+        "level": "success",
+        "message": "Target [vtu assistant] scope matched defined boundary (Single Host ). Environment: LAB"
+      },
+      {
+        "timestamp": "2026-08-16T13:13:09.432Z",
+        "stage": "authorization_check",
+        "level": "info",
+        "message": "Verifying legal authorization signature & active RoE documentation status..."
+      },
+      {
+        "timestamp": "2026-08-16T13:13:09.860Z",
+        "stage": "authorization_check",
+        "level": "success",
+        "message": "Authorization confirmed for Target [vtu assistant]. RoE active."
+      },
+      {
+        "timestamp": "2026-08-16T13:13:09.869Z",
+        "stage": "reconnaissance",
+        "level": "info",
+        "message": "Starting tech stack fingerprinting and endpoint discovery..."
+      },
+      {
+        "timestamp": "2026-08-16T13:13:10.396Z",
+        "stage": "reconnaissance",
+        "level": "success",
+        "message": "Discovered 3 active endpoints across targets."
+      },
+      {
+        "timestamp": "2026-08-16T13:13:10.413Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Executing security checks for profile [STANDARD]..."
+      },
+      {
+        "timestamp": "2026-08-16T13:13:10.418Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Auditing HTTP Security Headers for vtu assistant..."
+      },
+      {
+        "timestamp": "2026-08-16T13:13:15.799Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Auditing CORS policy & session cookie attributes for vtu assistant..."
+      },
+      {
+        "timestamp": "2026-08-16T13:13:16.217Z",
+        "stage": "vulnerability_analysis",
+        "level": "info",
+        "message": "Consolidating 7 vulnerability findings..."
+      },
+      {
+        "timestamp": "2026-08-16T13:13:16.629Z",
+        "stage": "risk_classification",
+        "level": "info",
+        "message": "Calculating CVSS v3.1 aggregate metrics and Security Score..."
+      },
+      {
+        "timestamp": "2026-08-16T13:13:17.046Z",
+        "stage": "risk_classification",
+        "level": "success",
+        "message": "Security Score computed: 47/100. Critical: 0, High: 1, Medium: 4, Low: 2."
+      },
+      {
+        "timestamp": "2026-08-16T13:13:17.097Z",
+        "stage": "report_generation",
+        "level": "success",
+        "message": "Assessment ASSESS-2026-367 completed successfully."
+      }
+    ],
+    "completedAt": "2026-08-16T13:13:17.101Z"
+  },
+  {
+    "id": "ASSESS-2026-805",
+    "targetIds": [
+      "target_123",
+      "target_1786885861411_rvn1"
+    ],
+    "targetsSnapshot": [
+      {
+        "id": "target_123",
+        "name": "OWASP Juice Shop Sandbox",
+        "url": "https://juice-shop.herokuapp.com",
+        "type": "Web App",
+        "status": "Authorized",
+        "roeId": "AUTH-2026-OWASP-01",
+        "scope": "Single Domain & REST API",
+        "addedDate": "2026-08-10",
+        "lastScanDate": "2026-08-16",
+        "notes": "Authorized sandbox instance for OWASP vulnerability verification labs.",
+        "authConfirmed": true
+      },
+      {
+        "id": "target_1786885861411_rvn1",
+        "name": "vtu assistant",
+        "url": "https://vtu-assistant-670669967147.asia-southeast1.run.app/",
+        "type": "Web App",
+        "environment": "LAB",
+        "status": "Authorized",
+        "roeId": "AUTH-2026-6124",
+        "scope": "Single Host ",
+        "addedDate": "2026-08-16",
+        "notes": "",
+        "authConfirmed": true,
+        "lastScanDate": "2026-08-16"
+      }
+    ],
+    "scanProfile": "standard",
+    "safeMode": false,
+    "rateLimit": 10,
+    "timeout": 30,
+    "status": "completed",
+    "currentStage": "report_generation",
+    "progressPercentage": 100,
+    "checksCompleted": 18,
+    "totalChecks": 30,
+    "findingsCount": {
+      "critical": 0,
+      "high": 2,
+      "medium": 6,
+      "low": 4,
+      "info": 0,
+      "total": 12
+    },
+    "securityScore": 10,
+    "startedAt": "2026-08-16T13:21:04.956Z",
+    "durationSeconds": 13,
+    "logs": [
+      {
+        "timestamp": "2026-08-16T13:21:04.956Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Assessment record ASSESS-2026-805 created. Frozen scope: OWASP Juice Shop Sandbox, vtu assistant"
+      },
+      {
+        "timestamp": "2026-08-16T13:21:04.970Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Initiating backend scope & RoE boundary validation for ASSESS-2026-805..."
+      },
+      {
+        "timestamp": "2026-08-16T13:21:05.381Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Verifying target [OWASP Juice Shop Sandbox] (https://juice-shop.herokuapp.com) against RoE [AUTH-2026-OWASP-01]..."
+      },
+      {
+        "timestamp": "2026-08-16T13:21:05.386Z",
+        "stage": "scope_validation",
+        "level": "success",
+        "message": "Target [OWASP Juice Shop Sandbox] scope matched defined boundary (Single Domain & REST API). Environment: undefined"
+      },
+      {
+        "timestamp": "2026-08-16T13:21:05.396Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Verifying target [vtu assistant] (https://vtu-assistant-670669967147.asia-southeast1.run.app/) against RoE [AUTH-2026-6124]..."
+      },
+      {
+        "timestamp": "2026-08-16T13:21:05.415Z",
+        "stage": "scope_validation",
+        "level": "success",
+        "message": "Target [vtu assistant] scope matched defined boundary (Single Host ). Environment: LAB"
+      },
+      {
+        "timestamp": "2026-08-16T13:21:05.433Z",
+        "stage": "authorization_check",
+        "level": "info",
+        "message": "Verifying legal authorization signature & active RoE documentation status..."
+      },
+      {
+        "timestamp": "2026-08-16T13:21:05.847Z",
+        "stage": "authorization_check",
+        "level": "success",
+        "message": "Authorization confirmed for Target [OWASP Juice Shop Sandbox]. RoE active."
+      },
+      {
+        "timestamp": "2026-08-16T13:21:05.852Z",
+        "stage": "authorization_check",
+        "level": "success",
+        "message": "Authorization confirmed for Target [vtu assistant]. RoE active."
+      },
+      {
+        "timestamp": "2026-08-16T13:21:05.864Z",
+        "stage": "reconnaissance",
+        "level": "info",
+        "message": "Starting tech stack fingerprinting and endpoint discovery..."
+      },
+      {
+        "timestamp": "2026-08-16T13:21:06.378Z",
+        "stage": "reconnaissance",
+        "level": "success",
+        "message": "Discovered 6 active endpoints across targets."
+      },
+      {
+        "timestamp": "2026-08-16T13:21:06.387Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Executing security checks for profile [STANDARD]..."
+      },
+      {
+        "timestamp": "2026-08-16T13:21:06.399Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Auditing HTTP Security Headers for OWASP Juice Shop Sandbox..."
+      },
+      {
+        "timestamp": "2026-08-16T13:21:11.541Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Auditing CORS policy & session cookie attributes for OWASP Juice Shop Sandbox..."
+      },
+      {
+        "timestamp": "2026-08-16T13:21:16.435Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Auditing HTTP Security Headers for vtu assistant..."
+      },
+      {
+        "timestamp": "2026-08-16T13:21:16.763Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Auditing CORS policy & session cookie attributes for vtu assistant..."
+      },
+      {
+        "timestamp": "2026-08-16T13:21:16.993Z",
+        "stage": "vulnerability_analysis",
+        "level": "info",
+        "message": "Consolidating 12 vulnerability findings..."
+      },
+      {
+        "timestamp": "2026-08-16T13:21:17.421Z",
+        "stage": "risk_classification",
+        "level": "info",
+        "message": "Calculating CVSS v3.1 aggregate metrics and Security Score..."
+      },
+      {
+        "timestamp": "2026-08-16T13:21:17.840Z",
+        "stage": "risk_classification",
+        "level": "success",
+        "message": "Security Score computed: 10/100. Critical: 0, High: 2, Medium: 6, Low: 4."
+      },
+      {
+        "timestamp": "2026-08-16T13:21:17.872Z",
+        "stage": "report_generation",
+        "level": "success",
+        "message": "Assessment ASSESS-2026-805 completed successfully."
+      }
+    ],
+    "completedAt": "2026-08-16T13:21:17.884Z"
+  },
+  {
+    "id": "ASSESS-2026-334",
+    "targetIds": [
+      "target_1786886661660_le33"
+    ],
+    "targetsSnapshot": [
+      {
+        "id": "target_1786886661660_le33",
+        "name": "whatsap",
+        "url": "https://web.whatsapp.com/",
+        "type": "Web App",
+        "environment": "LAB",
+        "status": "Authorized",
+        "roeId": "AUTH-2026-6124",
+        "scope": "Single Host ",
+        "addedDate": "2026-08-16",
+        "notes": "",
+        "authConfirmed": true
+      }
+    ],
+    "scanProfile": "standard",
+    "safeMode": false,
+    "rateLimit": 10,
+    "timeout": 30,
+    "status": "completed",
+    "currentStage": "report_generation",
+    "progressPercentage": 100,
+    "checksCompleted": 9,
+    "totalChecks": 15,
+    "findingsCount": {
+      "critical": 0,
+      "high": 0,
+      "medium": 0,
+      "low": 0,
+      "info": 0,
+      "total": 0
+    },
+    "securityScore": 100,
+    "startedAt": "2026-08-16T13:24:37.555Z",
+    "durationSeconds": 4,
+    "logs": [
+      {
+        "timestamp": "2026-08-16T13:24:37.555Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Assessment record ASSESS-2026-334 created. Frozen scope: whatsap"
+      },
+      {
+        "timestamp": "2026-08-16T13:24:37.564Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Initiating backend scope & RoE boundary validation for ASSESS-2026-334..."
+      },
+      {
+        "timestamp": "2026-08-16T13:24:37.986Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Verifying target [whatsap] (https://web.whatsapp.com/) against RoE [AUTH-2026-6124]..."
+      },
+      {
+        "timestamp": "2026-08-16T13:24:37.992Z",
+        "stage": "scope_validation",
+        "level": "success",
+        "message": "Target [whatsap] scope matched defined boundary (Single Host ). Environment: LAB"
+      },
+      {
+        "timestamp": "2026-08-16T13:24:38.011Z",
+        "stage": "authorization_check",
+        "level": "info",
+        "message": "Verifying legal authorization signature & active RoE documentation status..."
+      },
+      {
+        "timestamp": "2026-08-16T13:24:38.436Z",
+        "stage": "authorization_check",
+        "level": "success",
+        "message": "Authorization confirmed for Target [whatsap]. RoE active."
+      },
+      {
+        "timestamp": "2026-08-16T13:24:38.446Z",
+        "stage": "reconnaissance",
+        "level": "info",
+        "message": "Starting tech stack fingerprinting and endpoint discovery..."
+      },
+      {
+        "timestamp": "2026-08-16T13:24:38.961Z",
+        "stage": "reconnaissance",
+        "level": "success",
+        "message": "Discovered 3 active endpoints across targets."
+      },
+      {
+        "timestamp": "2026-08-16T13:24:39.006Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Executing security checks for profile [STANDARD]..."
+      },
+      {
+        "timestamp": "2026-08-16T13:24:39.018Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Auditing HTTP Security Headers for whatsap..."
+      },
+      {
+        "timestamp": "2026-08-16T13:24:39.610Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Auditing CORS policy & session cookie attributes for whatsap..."
+      },
+      {
+        "timestamp": "2026-08-16T13:24:40.145Z",
+        "stage": "vulnerability_analysis",
+        "level": "info",
+        "message": "Consolidating 0 vulnerability findings..."
+      },
+      {
+        "timestamp": "2026-08-16T13:24:40.580Z",
+        "stage": "risk_classification",
+        "level": "info",
+        "message": "Calculating CVSS v3.1 aggregate metrics and Security Score..."
+      },
+      {
+        "timestamp": "2026-08-16T13:24:40.990Z",
+        "stage": "risk_classification",
+        "level": "success",
+        "message": "Security Score computed: 100/100. Critical: 0, High: 0, Medium: 0, Low: 0."
+      },
+      {
+        "timestamp": "2026-08-16T13:24:41.041Z",
+        "stage": "report_generation",
+        "level": "success",
+        "message": "Assessment ASSESS-2026-334 completed successfully."
+      }
+    ],
+    "completedAt": "2026-08-16T13:24:41.056Z"
+  },
+  {
+    "id": "ASSESS-2026-875",
+    "targetIds": [
+      "target_1786886661660_le33"
+    ],
+    "targetsSnapshot": [
+      {
+        "id": "target_1786886661660_le33",
+        "name": "whatsap",
+        "url": "https://web.whatsapp.com/",
+        "type": "Web App",
+        "environment": "LAB",
+        "status": "Authorized",
+        "roeId": "AUTH-2026-6124",
+        "scope": "Single Host ",
+        "addedDate": "2026-08-16",
+        "notes": "",
+        "authConfirmed": true,
+        "lastScanDate": "2026-08-16"
+      }
+    ],
+    "scanProfile": "standard",
+    "safeMode": true,
+    "rateLimit": 10,
+    "timeout": 30,
+    "status": "completed",
+    "currentStage": "report_generation",
+    "progressPercentage": 100,
+    "checksCompleted": 12,
+    "totalChecks": 15,
+    "findingsCount": {
+      "critical": 0,
+      "high": 1,
+      "medium": 0,
+      "low": 0,
+      "info": 2,
+      "total": 3
+    },
+    "securityScore": 85,
+    "startedAt": "2026-08-16T13:25:21.059Z",
+    "durationSeconds": 6,
+    "logs": [
+      {
+        "timestamp": "2026-08-16T13:25:21.059Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Assessment record ASSESS-2026-875 created. Frozen scope: whatsap"
+      },
+      {
+        "timestamp": "2026-08-16T13:25:21.071Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Initiating backend scope & RoE boundary validation for ASSESS-2026-875..."
+      },
+      {
+        "timestamp": "2026-08-16T13:25:21.484Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Verifying target [whatsap] (https://web.whatsapp.com/) against RoE [AUTH-2026-6124]..."
+      },
+      {
+        "timestamp": "2026-08-16T13:25:21.490Z",
+        "stage": "scope_validation",
+        "level": "success",
+        "message": "Target [whatsap] scope matched defined boundary (Single Host ). Environment: LAB"
+      },
+      {
+        "timestamp": "2026-08-16T13:25:21.502Z",
+        "stage": "authorization_check",
+        "level": "info",
+        "message": "Verifying legal authorization signature & active RoE documentation status..."
+      },
+      {
+        "timestamp": "2026-08-16T13:25:21.921Z",
+        "stage": "authorization_check",
+        "level": "success",
+        "message": "Authorization confirmed for Target [whatsap]. RoE active."
+      },
+      {
+        "timestamp": "2026-08-16T13:25:21.930Z",
+        "stage": "reconnaissance",
+        "level": "info",
+        "message": "Starting tech stack fingerprinting and endpoint discovery..."
+      },
+      {
+        "timestamp": "2026-08-16T13:25:22.447Z",
+        "stage": "reconnaissance",
+        "level": "success",
+        "message": "Discovered 3 active endpoints across targets."
+      },
+      {
+        "timestamp": "2026-08-16T13:25:22.467Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Executing security checks for profile [STANDARD]..."
+      },
+      {
+        "timestamp": "2026-08-16T13:25:22.474Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Auditing HTTP Security Headers for whatsap..."
+      },
+      {
+        "timestamp": "2026-08-16T13:25:22.859Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Auditing CORS policy & session cookie attributes for whatsap..."
+      },
+      {
+        "timestamp": "2026-08-16T13:25:23.335Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Running opt-in path exposure checks on whatsap..."
+      },
+      {
+        "timestamp": "2026-08-16T13:25:25.593Z",
+        "stage": "vulnerability_analysis",
+        "level": "info",
+        "message": "Consolidating 3 vulnerability findings..."
+      },
+      {
+        "timestamp": "2026-08-16T13:25:26.037Z",
+        "stage": "risk_classification",
+        "level": "info",
+        "message": "Calculating CVSS v3.1 aggregate metrics and Security Score..."
+      },
+      {
+        "timestamp": "2026-08-16T13:25:26.456Z",
+        "stage": "risk_classification",
+        "level": "success",
+        "message": "Security Score computed: 85/100. Critical: 0, High: 1, Medium: 0, Low: 0."
+      },
+      {
+        "timestamp": "2026-08-16T13:25:26.555Z",
+        "stage": "report_generation",
+        "level": "success",
+        "message": "Assessment ASSESS-2026-875 completed successfully."
+      }
+    ],
+    "completedAt": "2026-08-16T13:25:26.567Z"
+  },
+  {
+    "id": "ASSESS-2026-399",
+    "targetIds": [
+      "target_1786885861411_rvn1"
+    ],
+    "targetsSnapshot": [
+      {
+        "id": "target_1786885861411_rvn1",
+        "name": "vtu assistant",
+        "url": "https://vtu-assistant-670669967147.asia-southeast1.run.app/",
+        "type": "Web App",
+        "environment": "LAB",
+        "status": "Authorized",
+        "roeId": "AUTH-2026-6124",
+        "scope": "Single Host ",
+        "addedDate": "2026-08-16",
+        "notes": "",
+        "authConfirmed": true,
+        "lastScanDate": "2026-08-16"
+      }
+    ],
+    "scanProfile": "comprehensive",
+    "safeMode": false,
+    "rateLimit": 10,
+    "timeout": 30,
+    "status": "completed",
+    "currentStage": "report_generation",
+    "progressPercentage": 100,
+    "checksCompleted": 17,
+    "totalChecks": 15,
+    "findingsCount": {
+      "critical": 0,
+      "high": 1,
+      "medium": 4,
+      "low": 2,
+      "info": 2,
+      "total": 9
+    },
+    "securityScore": 47,
+    "startedAt": "2026-08-16T13:47:28.885Z",
+    "durationSeconds": 16,
+    "logs": [
+      {
+        "timestamp": "2026-08-16T13:47:28.885Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Assessment record ASSESS-2026-399 created. Frozen scope: vtu assistant"
+      },
+      {
+        "timestamp": "2026-08-16T13:47:28.902Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Initiating backend scope & RoE boundary validation for ASSESS-2026-399..."
+      },
+      {
+        "timestamp": "2026-08-16T13:47:29.317Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Verifying target [vtu assistant] (https://vtu-assistant-670669967147.asia-southeast1.run.app/) against RoE [AUTH-2026-6124]..."
+      },
+      {
+        "timestamp": "2026-08-16T13:47:29.362Z",
+        "stage": "scope_validation",
+        "level": "success",
+        "message": "Target [vtu assistant] scope matched defined boundary (Single Host ). Environment: LAB"
+      },
+      {
+        "timestamp": "2026-08-16T13:47:29.383Z",
+        "stage": "authorization_check",
+        "level": "info",
+        "message": "Verifying legal authorization signature & active RoE documentation status..."
+      },
+      {
+        "timestamp": "2026-08-16T13:47:29.798Z",
+        "stage": "authorization_check",
+        "level": "success",
+        "message": "Authorization confirmed for Target [vtu assistant]. RoE active."
+      },
+      {
+        "timestamp": "2026-08-16T13:47:29.804Z",
+        "stage": "reconnaissance",
+        "level": "info",
+        "message": "Starting tech stack fingerprinting and endpoint discovery..."
+      },
+      {
+        "timestamp": "2026-08-16T13:47:30.337Z",
+        "stage": "reconnaissance",
+        "level": "success",
+        "message": "Discovered 3 active endpoints across targets."
+      },
+      {
+        "timestamp": "2026-08-16T13:47:30.363Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Executing security checks for profile [COMPREHENSIVE]..."
+      },
+      {
+        "timestamp": "2026-08-16T13:47:30.365Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Auditing HTTP Security Headers for vtu assistant..."
+      },
+      {
+        "timestamp": "2026-08-16T13:47:36.195Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Auditing CORS policy & session cookie attributes for vtu assistant..."
+      },
+      {
+        "timestamp": "2026-08-16T13:47:36.413Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Executing Port & Service Assessment profile on vtu assistant..."
+      },
+      {
+        "timestamp": "2026-08-16T13:47:42.963Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Running opt-in path exposure checks on vtu assistant..."
+      },
+      {
+        "timestamp": "2026-08-16T13:47:43.921Z",
+        "stage": "vulnerability_analysis",
+        "level": "info",
+        "message": "Consolidating 9 vulnerability findings..."
+      },
+      {
+        "timestamp": "2026-08-16T13:47:44.404Z",
+        "stage": "risk_classification",
+        "level": "info",
+        "message": "Calculating CVSS v3.1 aggregate metrics and Security Score..."
+      },
+      {
+        "timestamp": "2026-08-16T13:47:44.829Z",
+        "stage": "risk_classification",
+        "level": "success",
+        "message": "Security Score computed: 47/100. Critical: 0, High: 1, Medium: 4, Low: 2."
+      },
+      {
+        "timestamp": "2026-08-16T13:47:44.885Z",
+        "stage": "report_generation",
+        "level": "success",
+        "message": "Assessment ASSESS-2026-399 completed successfully."
+      }
+    ],
+    "completedAt": "2026-08-16T13:47:44.902Z"
+  },
+  {
+    "id": "ASSESS-2026-607",
+    "targetIds": [
+      "target_1786885861411_rvn1"
+    ],
+    "targetsSnapshot": [
+      {
+        "id": "target_1786885861411_rvn1",
+        "name": "vtu assistant",
+        "url": "https://vtu-assistant-670669967147.asia-southeast1.run.app/",
+        "type": "Web App",
+        "environment": "LAB",
+        "status": "Authorized",
+        "roeId": "AUTH-2026-6124",
+        "scope": "Single Host ",
+        "addedDate": "2026-08-16",
+        "notes": "",
+        "authConfirmed": true,
+        "lastScanDate": "2026-08-16"
+      }
+    ],
+    "scanProfile": "comprehensive",
+    "safeMode": true,
+    "rateLimit": 10,
+    "timeout": 30,
+    "status": "completed",
+    "currentStage": "report_generation",
+    "progressPercentage": 100,
+    "checksCompleted": 17,
+    "totalChecks": 15,
+    "findingsCount": {
+      "critical": 0,
+      "high": 1,
+      "medium": 4,
+      "low": 2,
+      "info": 2,
+      "total": 9
+    },
+    "securityScore": 47,
+    "startedAt": "2026-08-16T14:05:14.654Z",
+    "durationSeconds": 11,
+    "logs": [
+      {
+        "timestamp": "2026-08-16T14:05:14.654Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Assessment record ASSESS-2026-607 created. Frozen scope: vtu assistant"
+      },
+      {
+        "timestamp": "2026-08-16T14:05:14.664Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Initiating backend scope & RoE boundary validation for ASSESS-2026-607..."
+      },
+      {
+        "timestamp": "2026-08-16T14:05:15.076Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Verifying target [vtu assistant] (https://vtu-assistant-670669967147.asia-southeast1.run.app/) against RoE [AUTH-2026-6124]..."
+      },
+      {
+        "timestamp": "2026-08-16T14:05:15.081Z",
+        "stage": "scope_validation",
+        "level": "success",
+        "message": "Target [vtu assistant] scope matched defined boundary (Single Host ). Environment: LAB"
+      },
+      {
+        "timestamp": "2026-08-16T14:05:15.133Z",
+        "stage": "authorization_check",
+        "level": "info",
+        "message": "Verifying legal authorization signature & active RoE documentation status..."
+      },
+      {
+        "timestamp": "2026-08-16T14:05:15.558Z",
+        "stage": "authorization_check",
+        "level": "success",
+        "message": "Authorization confirmed for Target [vtu assistant]. RoE active."
+      },
+      {
+        "timestamp": "2026-08-16T14:05:15.562Z",
+        "stage": "reconnaissance",
+        "level": "info",
+        "message": "Starting tech stack fingerprinting and endpoint discovery..."
+      },
+      {
+        "timestamp": "2026-08-16T14:05:16.082Z",
+        "stage": "reconnaissance",
+        "level": "success",
+        "message": "Discovered 3 active endpoints across targets."
+      },
+      {
+        "timestamp": "2026-08-16T14:05:16.116Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Executing security checks for profile [COMPREHENSIVE]..."
+      },
+      {
+        "timestamp": "2026-08-16T14:05:16.128Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Auditing HTTP Security Headers for vtu assistant..."
+      },
+      {
+        "timestamp": "2026-08-16T14:05:16.814Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Auditing CORS policy & session cookie attributes for vtu assistant..."
+      },
+      {
+        "timestamp": "2026-08-16T14:05:17.039Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Executing Port & Service Assessment profile on vtu assistant..."
+      },
+      {
+        "timestamp": "2026-08-16T14:05:23.661Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Running opt-in path exposure checks on vtu assistant..."
+      },
+      {
+        "timestamp": "2026-08-16T14:05:24.243Z",
+        "stage": "vulnerability_analysis",
+        "level": "info",
+        "message": "Consolidating 9 vulnerability findings..."
+      },
+      {
+        "timestamp": "2026-08-16T14:05:24.707Z",
+        "stage": "risk_classification",
+        "level": "info",
+        "message": "Calculating CVSS v3.1 aggregate metrics and Security Score..."
+      },
+      {
+        "timestamp": "2026-08-16T14:05:25.129Z",
+        "stage": "risk_classification",
+        "level": "success",
+        "message": "Security Score computed: 47/100. Critical: 0, High: 1, Medium: 4, Low: 2."
+      },
+      {
+        "timestamp": "2026-08-16T14:05:25.162Z",
+        "stage": "report_generation",
+        "level": "success",
+        "message": "Assessment ASSESS-2026-607 completed successfully."
+      }
+    ],
+    "completedAt": "2026-08-16T14:05:25.205Z"
+  },
+  {
+    "id": "ASSESS-2026-829",
+    "targetIds": [
+      "target_123"
+    ],
+    "targetsSnapshot": [
+      {
+        "id": "target_123",
+        "name": "OWASP Juice Shop Sandbox",
+        "url": "https://juice-shop.herokuapp.com",
+        "type": "Web App",
+        "status": "Authorized",
+        "roeId": "AUTH-2026-OWASP-01",
+        "scope": "Single Domain & REST API",
+        "addedDate": "2026-08-10",
+        "lastScanDate": "2026-08-16",
+        "notes": "Authorized sandbox instance for OWASP vulnerability verification labs.",
+        "authConfirmed": true
+      }
+    ],
+    "scanProfile": "standard",
+    "safeMode": true,
+    "rateLimit": 10,
+    "timeout": 30,
+    "status": "completed",
+    "currentStage": "report_generation",
+    "progressPercentage": 100,
+    "checksCompleted": 9,
+    "totalChecks": 15,
+    "findingsCount": {
+      "critical": 0,
+      "high": 1,
+      "medium": 1,
+      "low": 2,
+      "info": 0,
+      "total": 4
+    },
+    "securityScore": 71,
+    "startedAt": "2026-08-16T15:07:50.285Z",
+    "durationSeconds": 5,
+    "logs": [
+      {
+        "timestamp": "2026-08-16T15:07:50.285Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Assessment record ASSESS-2026-829 created. Frozen scope: OWASP Juice Shop Sandbox"
+      },
+      {
+        "timestamp": "2026-08-16T15:07:50.289Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Initiating backend scope & RoE boundary validation for ASSESS-2026-829..."
+      },
+      {
+        "timestamp": "2026-08-16T15:07:50.696Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Verifying target [OWASP Juice Shop Sandbox] (https://juice-shop.herokuapp.com) against RoE [AUTH-2026-OWASP-01]..."
+      },
+      {
+        "timestamp": "2026-08-16T15:07:50.731Z",
+        "stage": "scope_validation",
+        "level": "success",
+        "message": "Target [OWASP Juice Shop Sandbox] scope matched defined boundary (Single Domain & REST API). Environment: undefined"
+      },
+      {
+        "timestamp": "2026-08-16T15:07:50.745Z",
+        "stage": "authorization_check",
+        "level": "info",
+        "message": "Verifying legal authorization signature & active RoE documentation status..."
+      },
+      {
+        "timestamp": "2026-08-16T15:07:51.166Z",
+        "stage": "authorization_check",
+        "level": "success",
+        "message": "Authorization confirmed for Target [OWASP Juice Shop Sandbox]. RoE active."
+      },
+      {
+        "timestamp": "2026-08-16T15:07:51.215Z",
+        "stage": "reconnaissance",
+        "level": "info",
+        "message": "Starting tech stack fingerprinting and endpoint discovery..."
+      },
+      {
+        "timestamp": "2026-08-16T15:07:51.741Z",
+        "stage": "reconnaissance",
+        "level": "success",
+        "message": "Discovered 3 active endpoints across targets."
+      },
+      {
+        "timestamp": "2026-08-16T15:07:51.755Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Executing security checks for profile [STANDARD]..."
+      },
+      {
+        "timestamp": "2026-08-16T15:07:51.757Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Auditing HTTP Security Headers for OWASP Juice Shop Sandbox..."
+      },
+      {
+        "timestamp": "2026-08-16T15:07:53.098Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Auditing CORS policy & session cookie attributes for OWASP Juice Shop Sandbox..."
+      },
+      {
+        "timestamp": "2026-08-16T15:07:54.217Z",
+        "stage": "vulnerability_analysis",
+        "level": "info",
+        "message": "Consolidating 4 vulnerability findings..."
+      },
+      {
+        "timestamp": "2026-08-16T15:07:54.641Z",
+        "stage": "risk_classification",
+        "level": "info",
+        "message": "Calculating CVSS v3.1 aggregate metrics and Security Score..."
+      },
+      {
+        "timestamp": "2026-08-16T15:07:55.056Z",
+        "stage": "risk_classification",
+        "level": "success",
+        "message": "Security Score computed: 71/100. Critical: 0, High: 1, Medium: 1, Low: 2."
+      },
+      {
+        "timestamp": "2026-08-16T15:07:55.062Z",
+        "stage": "report_generation",
+        "level": "success",
+        "message": "Assessment ASSESS-2026-829 completed successfully."
+      }
+    ],
+    "completedAt": "2026-08-16T15:07:55.069Z"
+  },
+  {
+    "id": "ASSESS-2026-756",
+    "targetIds": [
+      "target_123",
+      "target_1786898116936_hj7a"
+    ],
+    "targetsSnapshot": [
+      {
+        "id": "target_123",
+        "name": "OWASP Juice Shop Sandbox",
+        "url": "https://juice-shop.herokuapp.com",
+        "type": "Web App",
+        "status": "Authorized",
+        "roeId": "AUTH-2026-OWASP-01",
+        "scope": "Single Domain & REST API",
+        "addedDate": "2026-08-10",
+        "lastScanDate": "2026-08-16",
+        "notes": "Authorized sandbox instance for OWASP vulnerability verification labs.",
+        "authConfirmed": true
+      },
+      {
+        "id": "target_1786898116936_hj7a",
+        "name": "chatgpt",
+        "url": "https://chatgpt.com/#pricing",
+        "type": "API Endpoint",
+        "environment": "LAB",
+        "status": "Authorized",
+        "roeId": "AUTH-2026-2919",
+        "scope": "Single Host / Domain",
+        "addedDate": "2026-08-16",
+        "notes": "",
+        "authConfirmed": true
+      }
+    ],
+    "scanProfile": "standard",
+    "safeMode": true,
+    "rateLimit": 10,
+    "timeout": 30,
+    "status": "completed",
+    "currentStage": "report_generation",
+    "progressPercentage": 100,
+    "checksCompleted": 18,
+    "totalChecks": 30,
+    "findingsCount": {
+      "critical": 0,
+      "high": 2,
+      "medium": 3,
+      "low": 3,
+      "info": 0,
+      "total": 8
+    },
+    "securityScore": 37,
+    "startedAt": "2026-08-16T16:35:28.425Z",
+    "durationSeconds": 13,
+    "logs": [
+      {
+        "timestamp": "2026-08-16T16:35:28.425Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Assessment record ASSESS-2026-756 created. Frozen scope: OWASP Juice Shop Sandbox, chatgpt"
+      },
+      {
+        "timestamp": "2026-08-16T16:35:28.437Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Initiating backend scope & RoE boundary validation for ASSESS-2026-756..."
+      },
+      {
+        "timestamp": "2026-08-16T16:35:28.842Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Verifying target [OWASP Juice Shop Sandbox] (https://juice-shop.herokuapp.com) against RoE [AUTH-2026-OWASP-01]..."
+      },
+      {
+        "timestamp": "2026-08-16T16:35:28.844Z",
+        "stage": "scope_validation",
+        "level": "success",
+        "message": "Target [OWASP Juice Shop Sandbox] scope matched defined boundary (Single Domain & REST API). Environment: undefined"
+      },
+      {
+        "timestamp": "2026-08-16T16:35:28.847Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Verifying target [chatgpt] (https://chatgpt.com/#pricing) against RoE [AUTH-2026-2919]..."
+      },
+      {
+        "timestamp": "2026-08-16T16:35:28.850Z",
+        "stage": "scope_validation",
+        "level": "success",
+        "message": "Target [chatgpt] scope matched defined boundary (Single Host / Domain). Environment: LAB"
+      },
+      {
+        "timestamp": "2026-08-16T16:35:28.857Z",
+        "stage": "authorization_check",
+        "level": "info",
+        "message": "Verifying legal authorization signature & active RoE documentation status..."
+      },
+      {
+        "timestamp": "2026-08-16T16:35:29.277Z",
+        "stage": "authorization_check",
+        "level": "success",
+        "message": "Authorization confirmed for Target [OWASP Juice Shop Sandbox]. RoE active."
+      },
+      {
+        "timestamp": "2026-08-16T16:35:29.285Z",
+        "stage": "authorization_check",
+        "level": "success",
+        "message": "Authorization confirmed for Target [chatgpt]. RoE active."
+      },
+      {
+        "timestamp": "2026-08-16T16:35:29.328Z",
+        "stage": "reconnaissance",
+        "level": "info",
+        "message": "Starting tech stack fingerprinting and endpoint discovery..."
+      },
+      {
+        "timestamp": "2026-08-16T16:35:29.848Z",
+        "stage": "reconnaissance",
+        "level": "success",
+        "message": "Discovered 6 active endpoints across targets."
+      },
+      {
+        "timestamp": "2026-08-16T16:35:29.935Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Executing security checks for profile [STANDARD]..."
+      },
+      {
+        "timestamp": "2026-08-16T16:35:29.966Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Auditing HTTP Security Headers for OWASP Juice Shop Sandbox..."
+      },
+      {
+        "timestamp": "2026-08-16T16:35:35.559Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Auditing CORS policy & session cookie attributes for OWASP Juice Shop Sandbox..."
+      },
+      {
+        "timestamp": "2026-08-16T16:35:40.263Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Auditing HTTP Security Headers for chatgpt..."
+      },
+      {
+        "timestamp": "2026-08-16T16:35:40.580Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Auditing CORS policy & session cookie attributes for chatgpt..."
+      },
+      {
+        "timestamp": "2026-08-16T16:35:40.735Z",
+        "stage": "vulnerability_analysis",
+        "level": "info",
+        "message": "Consolidating 8 vulnerability findings..."
+      },
+      {
+        "timestamp": "2026-08-16T16:35:41.202Z",
+        "stage": "risk_classification",
+        "level": "info",
+        "message": "Calculating CVSS v3.1 aggregate metrics and Security Score..."
+      },
+      {
+        "timestamp": "2026-08-16T16:35:41.618Z",
+        "stage": "risk_classification",
+        "level": "success",
+        "message": "Security Score computed: 37/100. Critical: 0, High: 2, Medium: 3, Low: 3."
+      },
+      {
+        "timestamp": "2026-08-16T16:35:41.731Z",
+        "stage": "report_generation",
+        "level": "success",
+        "message": "Assessment ASSESS-2026-756 completed successfully."
+      }
+    ],
+    "completedAt": "2026-08-16T16:35:41.737Z"
+  },
+  {
+    "id": "ASSESS-2026-576",
+    "targetIds": [
+      "target_123",
+      "target_1786898116936_hj7a",
+      "target_1786899986877_bdfx"
+    ],
+    "targetsSnapshot": [
+      {
+        "id": "target_123",
+        "name": "OWASP Juice Shop Sandbox",
+        "url": "https://juice-shop.herokuapp.com",
+        "type": "Web App",
+        "status": "Authorized",
+        "roeId": "AUTH-2026-OWASP-01",
+        "scope": "Single Domain & REST API",
+        "addedDate": "2026-08-10",
+        "lastScanDate": "2026-08-16",
+        "notes": "Authorized sandbox instance for OWASP vulnerability verification labs.",
+        "authConfirmed": true
+      },
+      {
+        "id": "target_1786898116936_hj7a",
+        "name": "chatgpt",
+        "url": "https://chatgpt.com/#pricing",
+        "type": "API Endpoint",
+        "environment": "LAB",
+        "status": "Authorized",
+        "roeId": "AUTH-2026-2919",
+        "scope": "Single Host / Domain",
+        "addedDate": "2026-08-16",
+        "notes": "",
+        "authConfirmed": true,
+        "lastScanDate": "2026-08-16"
+      },
+      {
+        "id": "target_1786899986877_bdfx",
+        "name": "sid ahmed",
+        "url": "https://www.siddahmed.com/",
+        "type": "Web App",
+        "environment": "LAB",
+        "status": "Authorized",
+        "roeId": "AUTH-2026-2919",
+        "scope": "Single Host / Domain",
+        "addedDate": "2026-08-16",
+        "notes": "",
+        "authConfirmed": true
+      }
+    ],
+    "scanProfile": "standard",
+    "safeMode": true,
+    "rateLimit": 10,
+    "timeout": 30,
+    "status": "completed",
+    "currentStage": "report_generation",
+    "progressPercentage": 100,
+    "checksCompleted": 27,
+    "totalChecks": 45,
+    "findingsCount": {
+      "critical": 0,
+      "high": 2,
+      "medium": 2,
+      "low": 4,
+      "info": 0,
+      "total": 8
+    },
+    "securityScore": 42,
+    "startedAt": "2026-08-16T17:06:35.588Z",
+    "durationSeconds": 17,
+    "logs": [
+      {
+        "timestamp": "2026-08-16T17:06:35.588Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Assessment record ASSESS-2026-576 created. Frozen scope: OWASP Juice Shop Sandbox, chatgpt, sid ahmed"
+      },
+      {
+        "timestamp": "2026-08-16T17:06:35.620Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Initiating backend scope & RoE boundary validation for ASSESS-2026-576..."
+      },
+      {
+        "timestamp": "2026-08-16T17:06:36.044Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Verifying target [OWASP Juice Shop Sandbox] (https://juice-shop.herokuapp.com) against RoE [AUTH-2026-OWASP-01]..."
+      },
+      {
+        "timestamp": "2026-08-16T17:06:36.062Z",
+        "stage": "scope_validation",
+        "level": "success",
+        "message": "Target [OWASP Juice Shop Sandbox] scope matched defined boundary (Single Domain & REST API). Environment: undefined"
+      },
+      {
+        "timestamp": "2026-08-16T17:06:36.104Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Verifying target [chatgpt] (https://chatgpt.com/#pricing) against RoE [AUTH-2026-2919]..."
+      },
+      {
+        "timestamp": "2026-08-16T17:06:36.112Z",
+        "stage": "scope_validation",
+        "level": "success",
+        "message": "Target [chatgpt] scope matched defined boundary (Single Host / Domain). Environment: LAB"
+      },
+      {
+        "timestamp": "2026-08-16T17:06:36.119Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Verifying target [sid ahmed] (https://www.siddahmed.com/) against RoE [AUTH-2026-2919]..."
+      },
+      {
+        "timestamp": "2026-08-16T17:06:36.125Z",
+        "stage": "scope_validation",
+        "level": "success",
+        "message": "Target [sid ahmed] scope matched defined boundary (Single Host / Domain). Environment: LAB"
+      },
+      {
+        "timestamp": "2026-08-16T17:06:36.136Z",
+        "stage": "authorization_check",
+        "level": "info",
+        "message": "Verifying legal authorization signature & active RoE documentation status..."
+      },
+      {
+        "timestamp": "2026-08-16T17:06:36.555Z",
+        "stage": "authorization_check",
+        "level": "success",
+        "message": "Authorization confirmed for Target [OWASP Juice Shop Sandbox]. RoE active."
+      },
+      {
+        "timestamp": "2026-08-16T17:06:36.561Z",
+        "stage": "authorization_check",
+        "level": "success",
+        "message": "Authorization confirmed for Target [chatgpt]. RoE active."
+      },
+      {
+        "timestamp": "2026-08-16T17:06:36.568Z",
+        "stage": "authorization_check",
+        "level": "success",
+        "message": "Authorization confirmed for Target [sid ahmed]. RoE active."
+      },
+      {
+        "timestamp": "2026-08-16T17:06:36.585Z",
+        "stage": "reconnaissance",
+        "level": "info",
+        "message": "Starting tech stack fingerprinting and endpoint discovery..."
+      },
+      {
+        "timestamp": "2026-08-16T17:06:37.106Z",
+        "stage": "reconnaissance",
+        "level": "success",
+        "message": "Discovered 9 active endpoints across targets."
+      },
+      {
+        "timestamp": "2026-08-16T17:06:37.181Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Executing security checks for profile [STANDARD]..."
+      },
+      {
+        "timestamp": "2026-08-16T17:06:37.198Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Auditing HTTP Security Headers for OWASP Juice Shop Sandbox..."
+      },
+      {
+        "timestamp": "2026-08-16T17:06:42.657Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Auditing CORS policy & session cookie attributes for OWASP Juice Shop Sandbox..."
+      },
+      {
+        "timestamp": "2026-08-16T17:06:47.853Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Auditing HTTP Security Headers for chatgpt..."
+      },
+      {
+        "timestamp": "2026-08-16T17:06:48.094Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Auditing CORS policy & session cookie attributes for chatgpt..."
+      },
+      {
+        "timestamp": "2026-08-16T17:06:48.242Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Auditing HTTP Security Headers for sid ahmed..."
+      },
+      {
+        "timestamp": "2026-08-16T17:06:49.880Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Auditing CORS policy & session cookie attributes for sid ahmed..."
+      },
+      {
+        "timestamp": "2026-08-16T17:06:51.671Z",
+        "stage": "vulnerability_analysis",
+        "level": "info",
+        "message": "Consolidating 8 vulnerability findings..."
+      },
+      {
+        "timestamp": "2026-08-16T17:06:52.111Z",
+        "stage": "risk_classification",
+        "level": "info",
+        "message": "Calculating CVSS v3.1 aggregate metrics and Security Score..."
+      },
+      {
+        "timestamp": "2026-08-16T17:06:52.525Z",
+        "stage": "risk_classification",
+        "level": "success",
+        "message": "Security Score computed: 42/100. Critical: 0, High: 2, Medium: 2, Low: 4."
+      },
+      {
+        "timestamp": "2026-08-16T17:06:52.547Z",
+        "stage": "report_generation",
+        "level": "success",
+        "message": "Assessment ASSESS-2026-576 completed successfully."
+      }
+    ],
+    "completedAt": "2026-08-16T17:06:52.551Z"
+  },
+  {
+    "id": "ASSESS-2026-186",
+    "targetIds": [
+      "target_1786872281099_mdza"
+    ],
+    "targetsSnapshot": [
+      {
+        "id": "target_1786872281099_mdza",
+        "name": "google",
+        "url": "https://skit.crezam.com/candidate/dashboard",
+        "type": "Web App",
+        "status": "Authorized",
+        "roeId": "AUTH-2026-6361",
+        "scope": "Single Host / Domain",
+        "addedDate": "2026-08-16",
+        "notes": "",
+        "authConfirmed": true,
+        "lastScanDate": "2026-08-16"
+      }
+    ],
+    "scanProfile": "comprehensive",
+    "safeMode": true,
+    "rateLimit": 10,
+    "timeout": 30,
+    "status": "completed",
+    "currentStage": "report_generation",
+    "progressPercentage": 100,
+    "checksCompleted": 23,
+    "totalChecks": 15,
+    "findingsCount": {
+      "critical": 0,
+      "high": 1,
+      "medium": 2,
+      "low": 2,
+      "info": 1,
+      "total": 6
+    },
+    "securityScore": 63,
+    "startedAt": "2026-08-17T07:15:04.719Z",
+    "durationSeconds": 26,
+    "logs": [
+      {
+        "timestamp": "2026-08-17T07:15:04.719Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Assessment record ASSESS-2026-186 created. Frozen scope: google"
+      },
+      {
+        "timestamp": "2026-08-17T07:15:04.738Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Initiating backend scope & RoE boundary validation for ASSESS-2026-186..."
+      },
+      {
+        "timestamp": "2026-08-17T07:15:05.151Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Verifying target [google] (https://skit.crezam.com/candidate/dashboard) against RoE [AUTH-2026-6361]..."
+      },
+      {
+        "timestamp": "2026-08-17T07:15:05.153Z",
+        "stage": "scope_validation",
+        "level": "success",
+        "message": "Target [google] scope matched defined boundary (Single Host / Domain). Environment: undefined"
+      },
+      {
+        "timestamp": "2026-08-17T07:15:05.162Z",
+        "stage": "authorization_check",
+        "level": "info",
+        "message": "Verifying legal authorization signature & active RoE documentation status..."
+      },
+      {
+        "timestamp": "2026-08-17T07:15:05.573Z",
+        "stage": "authorization_check",
+        "level": "success",
+        "message": "Authorization confirmed for Target [google]. RoE active."
+      },
+      {
+        "timestamp": "2026-08-17T07:15:05.585Z",
+        "stage": "reconnaissance",
+        "level": "info",
+        "message": "Starting tech stack fingerprinting and endpoint discovery..."
+      },
+      {
+        "timestamp": "2026-08-17T07:15:06.099Z",
+        "stage": "reconnaissance",
+        "level": "success",
+        "message": "Discovered 3 active endpoints across targets."
+      },
+      {
+        "timestamp": "2026-08-17T07:15:06.166Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Executing security checks for profile [COMPREHENSIVE]..."
+      },
+      {
+        "timestamp": "2026-08-17T07:15:06.184Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Auditing HTTP Security Headers for google..."
+      },
+      {
+        "timestamp": "2026-08-17T07:15:07.668Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Auditing CORS policy & session cookie attributes for google..."
+      },
+      {
+        "timestamp": "2026-08-17T07:15:08.698Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Executing non-destructive Reflected XSS inspection on google..."
+      },
+      {
+        "timestamp": "2026-08-17T07:15:10.678Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Executing non-destructive SQL Injection inspection on google..."
+      },
+      {
+        "timestamp": "2026-08-17T07:15:13.165Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Executing Port & Service Assessment profile on google..."
+      },
+      {
+        "timestamp": "2026-08-17T07:15:19.376Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Running opt-in path exposure checks on google..."
+      },
+      {
+        "timestamp": "2026-08-17T07:15:29.441Z",
+        "stage": "vulnerability_analysis",
+        "level": "info",
+        "message": "Consolidating 6 vulnerability findings..."
+      },
+      {
+        "timestamp": "2026-08-17T07:15:29.875Z",
+        "stage": "risk_classification",
+        "level": "info",
+        "message": "Calculating CVSS v3.1 aggregate metrics and Security Score..."
+      },
+      {
+        "timestamp": "2026-08-17T07:15:30.296Z",
+        "stage": "risk_classification",
+        "level": "success",
+        "message": "Security Score computed: 63/100. Critical: 0, High: 1, Medium: 2, Low: 2."
+      },
+      {
+        "timestamp": "2026-08-17T07:15:30.324Z",
+        "stage": "report_generation",
+        "level": "success",
+        "message": "Assessment ASSESS-2026-186 completed successfully."
+      }
+    ],
+    "completedAt": "2026-08-17T07:15:30.331Z"
+  },
+  {
+    "id": "ASSESS-2026-325",
+    "targetIds": [
+      "target_123"
+    ],
+    "targetsSnapshot": [
+      {
+        "id": "target_123",
+        "name": "OWASP Juice Shop Sandbox",
+        "url": "https://juice-shop.herokuapp.com",
+        "type": "Web App",
+        "status": "Authorized",
+        "roeId": "AUTH-2026-OWASP-01",
+        "scope": "Single Domain & REST API",
+        "addedDate": "2026-08-10",
+        "lastScanDate": "2026-08-16",
+        "notes": "Authorized sandbox instance for OWASP vulnerability verification labs.",
+        "authConfirmed": true
+      }
+    ],
+    "scanProfile": "standard",
+    "safeMode": true,
+    "rateLimit": 10,
+    "timeout": 30,
+    "status": "completed",
+    "currentStage": "report_generation",
+    "progressPercentage": 100,
+    "checksCompleted": 15,
+    "totalChecks": 15,
+    "findingsCount": {
+      "critical": 0,
+      "high": 1,
+      "medium": 2,
+      "low": 2,
+      "info": 0,
+      "total": 5
+    },
+    "securityScore": 63,
+    "startedAt": "2026-08-18T10:19:49.275Z",
+    "durationSeconds": 49,
+    "logs": [
+      {
+        "timestamp": "2026-08-18T10:19:49.275Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Assessment record ASSESS-2026-325 created. Frozen scope: OWASP Juice Shop Sandbox"
+      },
+      {
+        "timestamp": "2026-08-18T10:19:49.284Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Initiating backend scope & RoE boundary validation for ASSESS-2026-325..."
+      },
+      {
+        "timestamp": "2026-08-18T10:19:49.696Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Verifying target [OWASP Juice Shop Sandbox] (https://juice-shop.herokuapp.com) against RoE [AUTH-2026-OWASP-01]..."
+      },
+      {
+        "timestamp": "2026-08-18T10:19:49.699Z",
+        "stage": "scope_validation",
+        "level": "success",
+        "message": "Target [OWASP Juice Shop Sandbox] scope matched defined boundary (Single Domain & REST API). Environment: undefined"
+      },
+      {
+        "timestamp": "2026-08-18T10:19:49.704Z",
+        "stage": "authorization_check",
+        "level": "info",
+        "message": "Verifying legal authorization signature & active RoE documentation status..."
+      },
+      {
+        "timestamp": "2026-08-18T10:19:50.119Z",
+        "stage": "authorization_check",
+        "level": "success",
+        "message": "Authorization confirmed for Target [OWASP Juice Shop Sandbox]. RoE active."
+      },
+      {
+        "timestamp": "2026-08-18T10:19:50.130Z",
+        "stage": "reconnaissance",
+        "level": "info",
+        "message": "Starting tech stack fingerprinting and endpoint discovery..."
+      },
+      {
+        "timestamp": "2026-08-18T10:19:50.658Z",
+        "stage": "reconnaissance",
+        "level": "success",
+        "message": "Discovered 3 active endpoints across targets."
+      },
+      {
+        "timestamp": "2026-08-18T10:19:50.687Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Executing security checks for profile [STANDARD]..."
+      },
+      {
+        "timestamp": "2026-08-18T10:19:50.698Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Auditing HTTP Security Headers for OWASP Juice Shop Sandbox..."
+      },
+      {
+        "timestamp": "2026-08-18T10:19:56.205Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Auditing CORS policy & session cookie attributes for OWASP Juice Shop Sandbox..."
+      },
+      {
+        "timestamp": "2026-08-18T10:20:01.043Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Executing non-destructive Reflected XSS inspection on OWASP Juice Shop Sandbox..."
+      },
+      {
+        "timestamp": "2026-08-18T10:20:05.085Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Executing non-destructive SQL Injection inspection on OWASP Juice Shop Sandbox..."
+      },
+      {
+        "timestamp": "2026-08-18T10:20:37.187Z",
+        "stage": "vulnerability_analysis",
+        "level": "info",
+        "message": "Consolidating 5 vulnerability findings..."
+      },
+      {
+        "timestamp": "2026-08-18T10:20:37.630Z",
+        "stage": "risk_classification",
+        "level": "info",
+        "message": "Calculating CVSS v3.1 aggregate metrics and Security Score..."
+      },
+      {
+        "timestamp": "2026-08-18T10:20:38.056Z",
+        "stage": "risk_classification",
+        "level": "success",
+        "message": "Security Score computed: 63/100. Critical: 0, High: 1, Medium: 2, Low: 2."
+      },
+      {
+        "timestamp": "2026-08-18T10:20:38.080Z",
+        "stage": "report_generation",
+        "level": "success",
+        "message": "Assessment ASSESS-2026-325 completed successfully."
+      }
+    ],
+    "completedAt": "2026-08-18T10:20:38.090Z"
+  },
+  {
+    "id": "ASSESS-2026-266",
+    "targetIds": [
+      "target_123"
+    ],
+    "targetsSnapshot": [
+      {
+        "id": "target_123",
+        "name": "OWASP Juice Shop Sandbox",
+        "url": "https://juice-shop.herokuapp.com",
+        "type": "Web App",
+        "status": "Authorized",
+        "roeId": "AUTH-2026-OWASP-01",
+        "scope": "Single Domain & REST API",
+        "addedDate": "2026-08-10",
+        "lastScanDate": "2026-08-18",
+        "notes": "Authorized sandbox instance for OWASP vulnerability verification labs.",
+        "authConfirmed": true
+      }
+    ],
+    "scanProfile": "standard",
+    "safeMode": true,
+    "rateLimit": 10,
+    "timeout": 30,
+    "status": "completed",
+    "currentStage": "report_generation",
+    "progressPercentage": 100,
+    "checksCompleted": 15,
+    "totalChecks": 15,
+    "findingsCount": {
+      "critical": 0,
+      "high": 0,
+      "medium": 0,
+      "low": 2,
+      "info": 0,
+      "total": 2
+    },
+    "securityScore": 94,
+    "startedAt": "2026-08-18T10:25:02.413Z",
+    "durationSeconds": 18,
+    "logs": [
+      {
+        "timestamp": "2026-08-18T10:25:02.413Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Assessment record ASSESS-2026-266 created. Frozen scope: OWASP Juice Shop Sandbox"
+      },
+      {
+        "timestamp": "2026-08-18T10:25:02.429Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Initiating backend scope & RoE boundary validation for ASSESS-2026-266..."
+      },
+      {
+        "timestamp": "2026-08-18T10:25:02.850Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Verifying target [OWASP Juice Shop Sandbox] (https://juice-shop.herokuapp.com) against RoE [AUTH-2026-OWASP-01]..."
+      },
+      {
+        "timestamp": "2026-08-18T10:25:02.854Z",
+        "stage": "scope_validation",
+        "level": "success",
+        "message": "Target [OWASP Juice Shop Sandbox] scope matched defined boundary (Single Domain & REST API). Environment: undefined"
+      },
+      {
+        "timestamp": "2026-08-18T10:25:02.859Z",
+        "stage": "authorization_check",
+        "level": "info",
+        "message": "Verifying legal authorization signature & active RoE documentation status..."
+      },
+      {
+        "timestamp": "2026-08-18T10:25:03.274Z",
+        "stage": "authorization_check",
+        "level": "success",
+        "message": "Authorization confirmed for Target [OWASP Juice Shop Sandbox]. RoE active."
+      },
+      {
+        "timestamp": "2026-08-18T10:25:03.295Z",
+        "stage": "reconnaissance",
+        "level": "info",
+        "message": "Starting tech stack fingerprinting and endpoint discovery..."
+      },
+      {
+        "timestamp": "2026-08-18T10:25:03.826Z",
+        "stage": "reconnaissance",
+        "level": "success",
+        "message": "Discovered 3 active endpoints across targets."
+      },
+      {
+        "timestamp": "2026-08-18T10:25:03.849Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Executing security checks for profile [STANDARD]..."
+      },
+      {
+        "timestamp": "2026-08-18T10:25:03.863Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Auditing HTTP Security Headers for OWASP Juice Shop Sandbox..."
+      },
+      {
+        "timestamp": "2026-08-18T10:25:09.896Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Auditing CORS policy & session cookie attributes for OWASP Juice Shop Sandbox..."
+      },
+      {
+        "timestamp": "2026-08-18T10:25:13.464Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Executing non-destructive Reflected XSS inspection on OWASP Juice Shop Sandbox..."
+      },
+      {
+        "timestamp": "2026-08-18T10:25:15.709Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Executing non-destructive SQL Injection inspection on OWASP Juice Shop Sandbox..."
+      },
+      {
+        "timestamp": "2026-08-18T10:25:19.104Z",
+        "stage": "vulnerability_analysis",
+        "level": "info",
+        "message": "Consolidating 2 vulnerability findings..."
+      },
+      {
+        "timestamp": "2026-08-18T10:25:19.523Z",
+        "stage": "risk_classification",
+        "level": "info",
+        "message": "Calculating CVSS v3.1 aggregate metrics and Security Score..."
+      },
+      {
+        "timestamp": "2026-08-18T10:25:19.937Z",
+        "stage": "risk_classification",
+        "level": "success",
+        "message": "Security Score computed: 94/100. Critical: 0, High: 0, Medium: 0, Low: 2."
+      },
+      {
+        "timestamp": "2026-08-18T10:25:19.974Z",
+        "stage": "report_generation",
+        "level": "success",
+        "message": "Assessment ASSESS-2026-266 completed successfully."
+      }
+    ],
+    "completedAt": "2026-08-18T10:25:19.985Z"
+  },
+  {
+    "id": "ASSESS-2026-223",
+    "targetIds": [
+      "target_123",
+      "target_1786872281099_mdza"
+    ],
+    "targetsSnapshot": [
+      {
+        "id": "target_123",
+        "name": "OWASP Juice Shop Sandbox",
+        "url": "https://juice-shop.herokuapp.com",
+        "type": "Web App",
+        "status": "Authorized",
+        "roeId": "AUTH-2026-OWASP-01",
+        "scope": "Single Domain & REST API",
+        "addedDate": "2026-08-10",
+        "lastScanDate": "2026-08-18",
+        "notes": "Authorized sandbox instance for OWASP vulnerability verification labs.",
+        "authConfirmed": true
+      },
+      {
+        "id": "target_1786872281099_mdza",
+        "name": "google",
+        "url": "https://skit.crezam.com/candidate/dashboard",
+        "type": "Web App",
+        "status": "Authorized",
+        "roeId": "AUTH-2026-6361",
+        "scope": "Single Host / Domain",
+        "addedDate": "2026-08-16",
+        "notes": "",
+        "authConfirmed": true,
+        "lastScanDate": "2026-08-17"
+      }
+    ],
+    "scanProfile": "comprehensive",
+    "safeMode": true,
+    "rateLimit": 10,
+    "timeout": 30,
+    "status": "completed",
+    "currentStage": "report_generation",
+    "progressPercentage": 100,
+    "checksCompleted": 46,
+    "totalChecks": 30,
+    "findingsCount": {
+      "critical": 0,
+      "high": 2,
+      "medium": 4,
+      "low": 4,
+      "info": 1,
+      "total": 11
+    },
+    "securityScore": 26,
+    "startedAt": "2026-08-18T10:27:03.495Z",
+    "durationSeconds": 82,
+    "logs": [
+      {
+        "timestamp": "2026-08-18T10:27:03.495Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Assessment record ASSESS-2026-223 created. Frozen scope: OWASP Juice Shop Sandbox, google"
+      },
+      {
+        "timestamp": "2026-08-18T10:27:03.512Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Initiating backend scope & RoE boundary validation for ASSESS-2026-223..."
+      },
+      {
+        "timestamp": "2026-08-18T10:27:03.935Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Verifying target [OWASP Juice Shop Sandbox] (https://juice-shop.herokuapp.com) against RoE [AUTH-2026-OWASP-01]..."
+      },
+      {
+        "timestamp": "2026-08-18T10:27:03.945Z",
+        "stage": "scope_validation",
+        "level": "success",
+        "message": "Target [OWASP Juice Shop Sandbox] scope matched defined boundary (Single Domain & REST API). Environment: undefined"
+      },
+      {
+        "timestamp": "2026-08-18T10:27:03.957Z",
+        "stage": "scope_validation",
+        "level": "info",
+        "message": "Verifying target [google] (https://skit.crezam.com/candidate/dashboard) against RoE [AUTH-2026-6361]..."
+      },
+      {
+        "timestamp": "2026-08-18T10:27:03.971Z",
+        "stage": "scope_validation",
+        "level": "success",
+        "message": "Target [google] scope matched defined boundary (Single Host / Domain). Environment: undefined"
+      },
+      {
+        "timestamp": "2026-08-18T10:27:03.991Z",
+        "stage": "authorization_check",
+        "level": "info",
+        "message": "Verifying legal authorization signature & active RoE documentation status..."
+      },
+      {
+        "timestamp": "2026-08-18T10:27:04.414Z",
+        "stage": "authorization_check",
+        "level": "success",
+        "message": "Authorization confirmed for Target [OWASP Juice Shop Sandbox]. RoE active."
+      },
+      {
+        "timestamp": "2026-08-18T10:27:04.421Z",
+        "stage": "authorization_check",
+        "level": "success",
+        "message": "Authorization confirmed for Target [google]. RoE active."
+      },
+      {
+        "timestamp": "2026-08-18T10:27:04.436Z",
+        "stage": "reconnaissance",
+        "level": "info",
+        "message": "Starting tech stack fingerprinting and endpoint discovery..."
+      },
+      {
+        "timestamp": "2026-08-18T10:27:04.958Z",
+        "stage": "reconnaissance",
+        "level": "success",
+        "message": "Discovered 6 active endpoints across targets."
+      },
+      {
+        "timestamp": "2026-08-18T10:27:04.981Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Executing security checks for profile [COMPREHENSIVE]..."
+      },
+      {
+        "timestamp": "2026-08-18T10:27:05.000Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Auditing HTTP Security Headers for OWASP Juice Shop Sandbox..."
+      },
+      {
+        "timestamp": "2026-08-18T10:27:09.697Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Auditing CORS policy & session cookie attributes for OWASP Juice Shop Sandbox..."
+      },
+      {
+        "timestamp": "2026-08-18T10:27:14.291Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Executing non-destructive Reflected XSS inspection on OWASP Juice Shop Sandbox..."
+      },
+      {
+        "timestamp": "2026-08-18T10:27:18.326Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Executing non-destructive SQL Injection inspection on OWASP Juice Shop Sandbox..."
+      },
+      {
+        "timestamp": "2026-08-18T10:27:50.475Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Executing Port & Service Assessment profile on OWASP Juice Shop Sandbox..."
+      },
+      {
+        "timestamp": "2026-08-18T10:28:00.617Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Running opt-in path exposure checks on OWASP Juice Shop Sandbox..."
+      },
+      {
+        "timestamp": "2026-08-18T10:28:12.657Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Auditing HTTP Security Headers for google..."
+      },
+      {
+        "timestamp": "2026-08-18T10:28:13.149Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Auditing CORS policy & session cookie attributes for google..."
+      },
+      {
+        "timestamp": "2026-08-18T10:28:13.481Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Executing non-destructive Reflected XSS inspection on google..."
+      },
+      {
+        "timestamp": "2026-08-18T10:28:15.169Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Executing non-destructive SQL Injection inspection on google..."
+      },
+      {
+        "timestamp": "2026-08-18T10:28:17.552Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Executing Port & Service Assessment profile on google..."
+      },
+      {
+        "timestamp": "2026-08-18T10:28:23.703Z",
+        "stage": "security_checks",
+        "level": "info",
+        "message": "Running opt-in path exposure checks on google..."
+      },
+      {
+        "timestamp": "2026-08-18T10:28:24.461Z",
+        "stage": "vulnerability_analysis",
+        "level": "info",
+        "message": "Consolidating 11 vulnerability findings..."
+      },
+      {
+        "timestamp": "2026-08-18T10:28:24.924Z",
+        "stage": "risk_classification",
+        "level": "info",
+        "message": "Calculating CVSS v3.1 aggregate metrics and Security Score..."
+      },
+      {
+        "timestamp": "2026-08-18T10:28:25.344Z",
+        "stage": "risk_classification",
+        "level": "success",
+        "message": "Security Score computed: 26/100. Critical: 0, High: 2, Medium: 4, Low: 4."
+      },
+      {
+        "timestamp": "2026-08-18T10:28:25.383Z",
+        "stage": "report_generation",
+        "level": "success",
+        "message": "Assessment ASSESS-2026-223 completed successfully."
+      }
+    ],
+    "completedAt": "2026-08-18T10:28:25.390Z"
+  }
+]

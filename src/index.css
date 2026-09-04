@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#080d1a] text-slate-100 antialiased font-sans min-h-screen selection:bg-cyan-500 selection:text-black;
+    background-image: 
+      radial-gradient(circle at 15% 15%, rgba(6, 182, 212, 0.08) 0%, transparent 40%),
+      radial-gradient(circle at 85% 85%, rgba(99, 102, 241, 0.08) 0%, transparent 40%),
+      linear-gradient(to right, rgba(15, 23, 42, 0.4) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(15, 23, 42, 0.4) 1px, transparent 1px);
+    background-size: 100% 100%, 100% 100%, 32px 32px, 32px 32px;
+  }
+}
+
+/* Cyber Glow & Accent Utilities */
+.glow-cyan {
+  box-shadow: 0 0 20px -3px rgba(6, 182, 212, 0.25);
+}
+
+.glow-blue {
+  box-shadow: 0 0 20px -3px rgba(59, 130, 246, 0.25);
+}
+
+.glow-purple {
+  box-shadow: 0 0 20px -3px rgba(168, 85, 247, 0.25);
+}
+
+.glow-emerald {
+  box-shadow: 0 0 20px -3px rgba(16, 185, 129, 0.25);
+}
+
+.border-glow-cyan {
+  border-color: rgba(6, 182, 212, 0.4);
+  box-shadow: 0 0 12px -2px rgba(6, 182, 212, 0.2);
+}
+
+/* Gradient Text Effect */
+.text-gradient-cyan {
+  @apply bg-gradient-to-r from-cyan-400 via-sky-400 to-indigo-400 bg-clip-text text-transparent;
+}
+
+.text-gradient-purple {
+  @apply bg-gradient-to-r from-purple-400 via-indigo-400 to-cyan-400 bg-clip-text text-transparent;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080d1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #06b6d4;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
