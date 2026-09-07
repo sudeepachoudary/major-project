@@ -158,7 +158,7 @@ class MemoryStore {
     fs.writeFileSync(SCANS_FILE, JSON.stringify(Array.from(this.scans.values()), null, 2));
   }
 
-  private saveFindings() {
+  saveFindings() {
     fs.writeFileSync(FINDINGS_FILE, JSON.stringify(Array.from(this.findings.values()), null, 2));
   }
 
